@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+
+
+<% @properties.each do |property| %>
+<%  if property.id == lease.property_id  %>
+<%=property.address_line_1%>
+<% end %>
+<% end %>
+
+
+
+
+<p>
+  <b>Tenant:</b>
+  <% @tenants.each do |tenant| %>
+<%  if tenant.id == @lease.tenant_id  %>
+<%=tenant.name%>
+<% end %>
+<% end %>
+</p>
+
+<p>
+  <b>Property:</b>
+  <% @properties.each do |property| %>
+<%  if property.id == @lease.property_id  %>
+<%=property.address_line_1%>
+<% end %>
+<% end %>
+</p>
+
+<p>
+  <b>Lease start:</b>
+  <%= @lease.lease_start %>
+</p>
+
+<p>
+  <b>Lease end:</b>
+  <%= @lease.lease_end %>
+</p>
+
+
+<%= link_to 'Edit', edit_lease_path(@lease) %> |
+<%= link_to 'Back', leases_path %>

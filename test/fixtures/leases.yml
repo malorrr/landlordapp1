@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tenant_id: 1
+  property_id: 1
+  lease_start: 2013-03-21
+  lease_end: 2013-03-21
+
+two:
+  tenant_id: 1
+  property_id: 1
+  lease_start: 2013-03-21
+  lease_end: 2013-03-21

@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+<p> <b>Firstname:</b> <%= @tenant.name %></p>
+<p> <b>Firstname:</b> <%= @lease.lease_start %></p>
+<p><%= @property.address_line_1 %></p>
+
+<%= link_to 'Edit', edit_tenant_path(@tenant) %> |
+<%= link_to 'Back', tenants_path %>

@@ -1,0 +1,8 @@
+Prime Number Resul<h1>Interest Only Mortgage Calculator</h1>
+
+<br> 
+
+<p>Get Money back in: <%= @getmoneyback  %> years</p>
+
+<p>Return on Investment: % <%= @returnoninvestment %><p>
+

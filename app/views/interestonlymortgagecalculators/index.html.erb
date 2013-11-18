@@ -1,0 +1,27 @@
+<h1>Listing interestonlymortgagecalculators</h1>
+
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Rate</th>
+    <th>Stress</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @interestonlymortgagecalculators.each do |interestonlymortgagecalculator| %>
+  <tr>
+    <td><%= interestonlymortgagecalculator.amount %></td>
+    <td><%= interestonlymortgagecalculator.rate %></td>
+    <td><%= interestonlymortgagecalculator.stress %></td>
+    <td><%= link_to 'Show', interestonlymortgagecalculator %></td>
+    <td><%= link_to 'Edit', edit_interestonlymortgagecalculator_path(interestonlymortgagecalculator) %></td>
+    <td><%= link_to 'Destroy', interestonlymortgagecalculator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Interestonlymortgagecalculator', new_interestonlymortgagecalculator_path %>

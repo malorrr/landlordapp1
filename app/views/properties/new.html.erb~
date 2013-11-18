@@ -1,0 +1,7 @@
+<h1>Add Property</h1>
+
+</ br>
+<%select_tag 'tenants', options_for_select(Tenant.all.collect{ |a| [a.name, a.id] })%>
+<%= render 'form' %>
+
+<%= link_to 'Back', properties_path %>

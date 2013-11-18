@@ -1,0 +1,2 @@
+Prime Number Result<br> 
+<%= @getmoneyback  %> is <%= @returnoninvestment %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  amount: 1
+  rate: 1
+  stress: 1
+
+two:
+  amount: 1
+  rate: 1
+  stress: 1

@@ -1,0 +1,30 @@
+<h1>Interest Only Mortgage Calculator</h1> 
+</br>
+<p>Enter your own numbers in the fields below and calculate:</p>
+</br>
+<p>The Stress Test allows you to calculate what your repayments would be if interest rates increased to that interest rate</p>
+
+
+
+</br>
+<%= form_tag "/validateim" do %> 
+
+<table class="ui-helper-center">
+    <tr>
+        <td>Mortgage Amount: €</td>
+        <td><%= text_field_tag :amount %></td>
+    </tr>
+    <tr>
+        <td>Rate: %</td>
+        <td><%= text_field_tag :rate %></td>
+    </tr>
+    <tr>
+        <td>Stress Test: %</td>
+        <td><%= text_field_tag :stress %></td>
+    </tr>
+</table>
+
+
+ <%= submit_tag "Calculate" %>
+<% end %>
+

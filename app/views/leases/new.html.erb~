@@ -1,0 +1,22 @@
+<h1>New lease</h1>
+
+<%= render 'form' %>
+
+
+
+<%= link_to 'Back', leases_path %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

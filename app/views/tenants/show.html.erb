@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @tenant.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @tenant.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @tenant.email %>
+<% email = @tenant.email%>
+</p>
+
+<p>Send Email (Gmail Acount Required)</p>
+<%= form_tag "/sendmessage" do %> 
+
+
+
+<table class="noborder">
+    <tr>
+        <td>Gmail:</td>
+        <td><%= text_field_tag :useremail %></td>
+    </tr>
+    <tr>
+        <td>Password: </td>
+        <td><%= password_field_tag :password %></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><%= text_field_tag :email  %></td>
+    </tr>
+<tr>
+        <td>Subject</td>
+        <td><%= text_field_tag :subject %></td>
+    </tr>
+<tr>
+        <td>Message</td>
+        <td><%= text_field_tag :message %></td>
+    </tr>
+</table>
+
+
+ <%= submit_tag "Send" %>
+<% end %>
+
+
+<%= link_to 'Edit', edit_tenant_path(@tenant) %> |
+<%= link_to 'Back', tenants_path %>

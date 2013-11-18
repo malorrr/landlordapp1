@@ -1,0 +1,8 @@
+Interest Only Mortgage Calculator
+
+<br> 
+
+<p>Monthly Repayment Interest Only: €<%= @monthlyRepayment  %></p>
+
+<p>Stress Test: €<%= @stressTest %><p>
+

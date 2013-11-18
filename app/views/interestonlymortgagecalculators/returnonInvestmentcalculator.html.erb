@@ -1,0 +1,27 @@
+<h1>Return on Investment Calculator</h1> 
+<%= form_tag "/validateri" do %> 
+
+		
+<p>Enter your own numbers in the fields below and calculate:</p>
+
+
+
+
+
+<table class="noborder">
+    <tr>
+        <td>Investment Amount: €</td>
+        <td><%= text_field_tag :amount %></td>
+    </tr>
+    <tr>
+        <td>Monthly Cashflow: €</td>
+        <td><%= text_field_tag :monthlycashflow %></td>
+    </tr>
+    
+</table>
+
+
+
+ <%= submit_tag "Calculate" %>
+<% end %>
+
